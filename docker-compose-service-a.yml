@@ -1,0 +1,9 @@
+services:
+  service-a:
+    image: service-a
+    depends_on:
+    - db-b
+    ports:
+      - 3000:3000
+    environment:
+      - POSTGRES_DATABASE_PORT=5432
